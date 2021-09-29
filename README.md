@@ -1,7 +1,7 @@
 # TimestampConverter for Kafka Connect
 This is a rewrite of Apache Kafka® SMT `org.apache.kafka.connect.transforms.TimestampConverter`(https://docs.confluent.io/platform/current/connect/transforms/timestampconverter.html).
 
-It change the property `field` to `fields` , allows us handle multiple fields once.
+It change the property `field` to `fields` , allows us handle multiple fields at once.
 
 ## Example
 This configuration snippet shows how to use `TimestampConverter` to transform a Unix epoch (represented as an `int64` value) into a formatted date string.
