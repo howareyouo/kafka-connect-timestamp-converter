@@ -10,7 +10,7 @@ Download the jar file from
 Drag it into you `plugin.path` folders (each of them).
 
 ## Example
-This configuration snippet shows how to use `TimestampConverter` to transform a Unix epoch (represented as an `int64` value) into a formatted date string.
+This configuration snippet shows how to use `TimestampConverter` to transform JSON formatted `timestamp` (represented as an `IOS-8601` string value, which comes from the Debezium JDBC source connector) into a target type `Timestamp`(used by the following Confluent JDBC sink connector).
 
 ```
 "transforms": "TimestampConverter",
